@@ -93,3 +93,101 @@ padding:20px;
 margin-top:20px;
 
 }
+
+.breaking-news{
+background:#ffeb3b;
+padding:10px;
+font-weight:bold;
+}
+
+.search-box{
+text-align:center;
+padding:20px;
+background:white;
+}
+
+.search-box input{
+width:300px;
+padding:12px;
+border:1px solid #ccc;
+border-radius:5px;
+}
+
+.search-box button{
+padding:12px 20px;
+background:#8b0000;
+color:white;
+border:none;
+cursor:pointer;
+border-radius:5px;
+}
+
+.search-box button:hover{
+background:#003399;
+}
+
+.info-section{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(400px,1fr));
+
+gap:20px;
+
+padding:20px;
+
+}
+
+.info-box{
+
+background:white;
+
+border-radius:10px;
+
+box-shadow:0 0 10px rgba(0,0,0,.2);
+
+padding:20px;
+
+}
+
+.info-box h2{
+
+background:#003399;
+
+color:white;
+
+padding:10px;
+
+margin:-20px -20px 20px;
+
+}
+
+.info-box ul{
+
+list-style:none;
+
+}
+
+.info-box ul li{
+
+padding:12px;
+
+border-bottom:1px solid #ddd;
+
+}
+
+.info-box a{
+
+text-decoration:none;
+
+color:black;
+
+font-weight:bold;
+
+}
+
+.info-box a:hover{
+
+color:red;
+
+}
