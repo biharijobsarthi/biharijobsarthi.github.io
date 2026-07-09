@@ -284,3 +284,9 @@ border-radius:6px;
 .course-box a:hover{
 background:#003399;
 }
+.top img{
+display:block;
+margin:0 auto 15px;
+max-width:280px;
+height:auto;
+}
