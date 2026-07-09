@@ -1,98 +1,59 @@
+/* ===========================
+   BIHARI JOB SARTHI V2.0
+=========================== */
+
 *{
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:Arial;
+font-family:Arial,Helvetica,sans-serif;
 }
 
 body{
-background:#f2f2f2;
+background:#f4f4f4;
+color:#222;
+line-height:1.6;
 }
+
+/* Header */
 
 .top{
-
-background:#8b0000;
-color:white;
+background:#8B0000;
 padding:20px;
 text-align:center;
-
+color:#fff;
 }
 
-nav{
+.top img{
+max-width:280px;
+height:auto;
+display:block;
+margin:auto;
+margin-bottom:10px;
+}
 
+/* Navigation */
+
+nav{
 display:flex;
 justify-content:center;
 flex-wrap:wrap;
 background:#003399;
-
 }
 
 nav a{
-
-color:white;
+color:#fff;
 text-decoration:none;
-padding:15px 20px;
+padding:15px 18px;
 font-weight:bold;
-
+transition:.3s;
 }
 
 nav a:hover{
-
-background:red;
-
+background:#8B0000;
 }
 
-.hero{
-
-background:white;
-padding:40px;
-text-align:center;
-
-}
-
-.grid{
-
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-gap:20px;
-padding:20px;
-
-}
-
-.card{
-
-background:white;
-padding:20px;
-border-radius:10px;
-box-shadow:0 0 10px rgba(0,0,0,.2);
-
-}
-
-.card h2{
-
-background:#8b0000;
-color:white;
-padding:10px;
-margin:-20px -20px 20px;
-
-}
-
-.card ul li{
-
-padding:10px;
-border-bottom:1px solid #ddd;
-
-}
-
-footer{
-
-background:#003399;
-color:white;
-text-align:center;
-padding:20px;
-margin-top:20px;
-
-}
+/* Breaking News */
 
 .breaking-news{
 background:#ffeb3b;
@@ -100,23 +61,26 @@ padding:10px;
 font-weight:bold;
 }
 
+/* Search */
+
 .search-box{
-text-align:center;
+background:#fff;
 padding:20px;
-background:white;
+text-align:center;
 }
 
 .search-box input{
-width:300px;
+width:320px;
+max-width:90%;
 padding:12px;
 border:1px solid #ccc;
 border-radius:5px;
 }
 
 .search-box button{
-padding:12px 20px;
-background:#8b0000;
-color:white;
+padding:12px 18px;
+background:#8B0000;
+color:#fff;
 border:none;
 cursor:pointer;
 border-radius:5px;
@@ -126,71 +90,21 @@ border-radius:5px;
 background:#003399;
 }
 
-.info-section{
+/* Hero */
 
-display:grid;
-
-grid-template-columns:repeat(auto-fit,minmax(400px,1fr));
-
-gap:20px;
-
-padding:20px;
-
+.hero{
+background:#fff;
+padding:40px;
+text-align:center;
 }
 
-.info-box{
-
-background:white;
-
-border-radius:10px;
-
-box-shadow:0 0 10px rgba(0,0,0,.2);
-
-padding:20px;
-
+.hero h2{
+color:#8B0000;
+margin-bottom:15px;
 }
 
-.info-box h2{
+/* Quick Links */
 
-background:#003399;
-
-color:white;
-
-padding:10px;
-
-margin:-20px -20px 20px;
-
-}
-
-.info-box ul{
-
-list-style:none;
-
-}
-
-.info-box ul li{
-
-padding:12px;
-
-border-bottom:1px solid #ddd;
-
-}
-
-.info-box a{
-
-text-decoration:none;
-
-color:black;
-
-font-weight:bold;
-
-}
-
-.info-box a:hover{
-
-color:red;
-
-}
 .quick-links{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
@@ -199,47 +113,80 @@ padding:20px;
 }
 
 .box{
-display:flex;
-justify-content:center;
-align-items:center;
-height:80px;
-font-size:20px;
-font-weight:bold;
+color:#fff;
 text-decoration:none;
-color:white;
+padding:18px;
+text-align:center;
+font-weight:bold;
+border-radius:8px;
+}
+
+.red{background:#d32f2f;}
+.blue{background:#1976d2;}
+.green{background:#388e3c;}
+.orange{background:#f57c00;}
+.purple{background:#7b1fa2;}
+.maroon{background:#8B0000;}
+/* ===========================
+   CARDS
+=========================== */
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+gap:20px;
+padding:20px;
+}
+
+.card{
+background:#fff;
 border-radius:10px;
+box-shadow:0 4px 12px rgba(0,0,0,.15);
+overflow:hidden;
 transition:.3s;
 }
 
-.box:hover{
-transform:scale(1.05);
+.card:hover{
+transform:translateY(-5px);
 }
 
-.red{
-background:#d32f2f;
+.card h2{
+background:#8B0000;
+color:#fff;
+padding:12px;
+font-size:20px;
 }
 
-.blue{
-background:#1976d2;
+.card ul{
+list-style:none;
+padding:15px;
 }
 
-.green{
-background:#388e3c;
+.card ul li{
+padding:10px 0;
+border-bottom:1px solid #ddd;
 }
 
-.orange{
-background:#f57c00;
+.card ul li:last-child{
+border-bottom:none;
 }
 
-.purple{
-background:#7b1fa2;
+.card ul li a{
+text-decoration:none;
+color:#222;
+font-weight:bold;
 }
 
-.maroon{
-background:#8b0000;
+.card ul li a:hover{
+color:#d32f2f;
 }
+
+/* ===========================
+   COURSE SECTION
+=========================== */
+
 .course-home{
-padding:30px;
+padding:30px 20px;
 text-align:center;
 }
 
@@ -250,7 +197,7 @@ color:#8B0000;
 
 .course-grid{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
 gap:20px;
 }
 
@@ -258,7 +205,7 @@ gap:20px;
 background:#fff;
 padding:20px;
 border-radius:10px;
-box-shadow:0 4px 10px rgba(0,0,0,.15);
+box-shadow:0 4px 12px rgba(0,0,0,.15);
 }
 
 .course-box h3{
@@ -266,27 +213,118 @@ margin-bottom:10px;
 }
 
 .course-box p{
-font-size:18px;
+font-size:22px;
 color:#008000;
 font-weight:bold;
+margin:10px 0;
 }
 
 .course-box a{
 display:inline-block;
-margin-top:15px;
+padding:12px 20px;
 background:#8B0000;
 color:#fff;
-padding:10px 20px;
 text-decoration:none;
 border-radius:6px;
+font-weight:bold;
 }
 
 .course-box a:hover{
 background:#003399;
 }
-.top img{
-display:block;
-margin:0 auto 15px;
-max-width:280px;
-height:auto;
+
+/* ===========================
+   INFO SECTION
+=========================== */
+
+.info-section{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+gap:20px;
+padding:20px;
+}
+
+.info-box{
+background:#fff;
+border-radius:10px;
+box-shadow:0 4px 12px rgba(0,0,0,.15);
+}
+
+.info-box h2{
+background:#003399;
+color:#fff;
+padding:12px;
+}
+
+.info-box ul{
+list-style:none;
+padding:15px;
+}
+
+.info-box ul li{
+padding:10px 0;
+border-bottom:1px solid #ddd;
+}
+
+.info-box ul li:last-child{
+border-bottom:none;
+}
+
+.info-box a{
+text-decoration:none;
+color:#222;
+font-weight:bold;
+}
+
+.info-box a:hover{
+color:#d32f2f;
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+
+footer{
+background:#003399;
+color:#fff;
+text-align:center;
+padding:30px 20px;
+margin-top:30px;
+}
+
+footer a{
+color:#fff;
+text-decoration:none;
+font-weight:bold;
+}
+
+footer a:hover{
+text-decoration:underline;
+}
+
+/* ===========================
+   MOBILE
+=========================== */
+
+@media(max-width:768px){
+
+nav a{
+width:100%;
+text-align:center;
+border-bottom:1px solid rgba(255,255,255,.2);
+}
+
+.hero{
+padding:20px;
+}
+
+.search-box input{
+width:100%;
+margin-bottom:10px;
+}
+
+.search-box button{
+width:100%;
+}
+
 }
